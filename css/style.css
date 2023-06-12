@@ -550,7 +550,7 @@ html {
   .report-right {
     width: 100%;
     height: 300px;
-    background-image: url("/src/mobile/screen-01.png");
+    background-image: url("../src/mobile/screen-01.png");
     background-position: center;
   }
   .report-subtitle {
@@ -611,7 +611,7 @@ html {
   .custom-left {
     width: 100%;
     height: 300px;
-    background-image: url("/src/mobile/screen-02.png");
+    background-image: url("../src/mobile/screen-02.png");
     background-position: center;
   }
   .custom-right {
@@ -705,7 +705,7 @@ html {
   .dashboard-right {
     width: 100%;
     height: 300px;
-    background-image: url("/src/mobile/screen-03.png");
+    background-image: url("../src/mobile/screen-03.png");
     background-position: center;
   }
   .dashboard-subtitle {
