@@ -1,0 +1,127 @@
+.footer {
+    margin-bottom: 280px;
+
+    &__background {
+        background-image: url("../src/desctop/background-bottom-2.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 1980px;
+        width: 100%;
+        background-size: contain;
+    }
+
+    &__bottom {
+        height: 154px;
+        margin: 0 auto 20px;
+        background-color: #1F2F5C;
+
+        &_flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 36px;
+        }
+
+        &_flex img {
+            margin-left: 8%;
+        }
+
+        &_menu {
+            &-link {
+                text-decoration: none;
+                transition: color .3s;
+                @include text(Roboto, 14px, 400, normal, #8794BA, 16px);
+                cursor: pointer;
+            }
+
+            &-link:hover {
+                color: #FFFFFF;
+            }
+
+            &-flex {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                column-gap: 36px;
+            }
+        }
+
+        &_social {
+            margin-right: 8%;
+        }
+
+        &_social i {
+            font-size: 20px;
+            color: #8794BA;
+            height: 20px;
+            padding: 0 20px 0 20px;
+            transition: color .3s;
+        }
+
+        &_social i:hover {
+            color: #FFFFFF;
+        }
+
+    }
+}
+
+
+
+
+@media screen and (max-width: $max-width-myContainer-medium) {
+    .footer {
+        // margin-bottom: 280px;
+
+        &__background {
+            background-image: url("../src/desctop/background-bottom-2.png");
+            min-height: 1005px;
+        }
+
+        &__bottom {
+            &_flex img {
+                margin-left: 4%;
+            }
+
+            &_social {
+                margin-right: 2%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $max-width-myContainer-tablet) {
+    .footer {
+        // padding-bottom: 280px;
+
+        &__bottom {
+            &_menu {
+                display: none;
+            }
+
+            &_flex img {
+                margin-left: 18px;
+            }
+
+            &_social {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $max-width-myContainer-mobile) {
+    .footer {
+        &__bottom {
+            height: 97px;
+        }
+
+        &__background {
+            background-image: url("../src/mobile/background-bottom-3.png");
+            height: 1005px;
+        }
+    }
+}

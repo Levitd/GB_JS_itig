@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import 'var';
+
+@mixin text ($ff, $fs, $fw, $fst, $fc, $lh) {
+    font: {
+        family: $ff, sans-serif;
+        size: $fs;
+        weight: $fw;
+        style: $fst;
+    }
+
+    line-height: $lh;
+    color: $fc;
+}
+
+.flex {
+    display: flex;
+
+    &-rows {
+        flex-direction: row;
+    }
+}
+
+.myConteiner {
+    max-width: $max-width-myContainer;
+    margin: 0 auto;
+}
+
+
+@import 'header';
+@import 'footer';
+@import 'main';
+@import 'report';
+@import 'custom';
+@import 'dashboard';
+@import 'price';
+@import 'login_register';
